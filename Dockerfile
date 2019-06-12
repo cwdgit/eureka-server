@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-alpine
 
-ADD target/*.jar /app.jar
+ADD *.jar /app.jar
 
 ADD entrypoint.sh entrypoint.sh
 RUN chmod 755 entrypoint.sh 
