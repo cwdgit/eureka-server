@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-alpine
 
-ADD target/eureka-server-1.0.0.jar /app.jar
+ADD target/*.jar /app.jar
 
 ADD entrypoint.sh entrypoint.sh
 RUN chmod 755 entrypoint.sh 
